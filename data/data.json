@@ -1,16 +1,111 @@
 {
-"profile":{"name":"Jabez John Betet","pitch":"Full-stack developer who builds web systems for real offices, and AI prototypes on the side.","about":"4th-year BSIT student. I build web systems end to end, from the database to the screen. My capstone is a live system for a city employment office. Edit this text to say it your way.","github":"https://github.com/jsevidev","email":"your.email@example.com","linkedin":"https://www.linkedin.com/in/your-handle"},
-"certs":{"text":"The full list of certificates and workshop proofs is in my Achievement Log.","url":"https://jsevidev.github.io/cert-proof-images/"},
-"skills":[
-{"name":"Laravel and PHP","projects":["peso-connect"]},
-{"name":"MySQL","projects":["peso-connect"]},
-{"name":"HTML, CSS, JavaScript","projects":["peso-connect","ocac-chords"]},
-{"name":"Bootstrap","projects":["peso-connect"]}],
-"projects":[
-{"id":"peso-connect","title":"PESO Connect","type":"school","featured":true,"date":"May 2026","summary":"Web system that digitizes PESO Ozamiz City's job seeker enlistment, employer records, referrals, first-time jobseeker certification, and DOLE reporting.","stack":["Laravel","MySQL","HTML","CSS","JavaScript","Bootstrap"],"note":"Free hosting: the first load may take up to a minute.","links":{"demo":"https://peso-connect-8i0o.onrender.com/","repo":""},
-"images":["assets/images/peso-2.jpg","assets/images/peso-1.jpg","assets/images/peso-3.jpg"],
-"case":{"problem":"PESO ran on paper: job seeker registration forms, employer hiring requests, referral slips, and the monthly DOLE report. Once a form was filed, finding that job seeker again was hard. Employers often didn't report back on referral outcomes, so PESO had no reliable way to track placements. The DOLE report was tallied by hand from the same paper files.",
-"role":"Group capstone, and I was the full-stack developer: Laravel backend, MySQL database, and the HTML, CSS, JavaScript and Bootstrap frontend. Staff now encode job seekers once (self-submitted online or walk-in), generate referrals digitally, and the DOLE report (total registered, total placed, gender breakdown) generates automatically.",
-"hard":["Mid-project scope pivot. After panel and client feedback, we moved from a full self-service applicant and employer system to a staff-operated, account-free model. I reworked the ERD, class diagram, and activity diagrams to match.","One enlistment flow for two sources. Job seekers can self-register or be encoded by staff, and both go into a single table with the same logic, so nothing is duplicated."]}},
-{"id":"ocac-chords","title":"OCAC Chord Sheet","type":"personal","featured":false,"summary":"Free, searchable chord sheets for OCAC worship.","stack":["HTML","CSS","JavaScript"],"links":{"demo":"https://jsevidev.github.io/ocac-worship-chords/","repo":"https://github.com/jsevidev/ocac-worship-chords"}}
-]}
+  "profile": {
+    "name": "Jabez John Betet",
+    "pitch": "Full-stack developer who builds web systems for real offices, and AI prototypes on the side.",
+    "about": "4th-year BSIT student. I build web systems end to end, from the database to the screen. My capstone is a live system for a city employment office. Edit this text to say it your way.",
+    "github": "https://github.com/jsevidev",
+    "email": "your.email@example.com",
+    "linkedin": "https://www.linkedin.com/in/your-handle"
+  },
+  "certs": {
+    "text": "The full list of certificates and workshop proofs is in my Achievement Log.",
+    "url": "https://jsevidev.github.io/cert-proof-images/"
+  },
+  "skills": [
+    {
+      "name": "Laravel and PHP",
+      "projects": [
+        "peso-connect"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "projects": [
+        "peso-connect"
+      ]
+    },
+    {
+      "name": "HTML, CSS, JavaScript",
+      "projects": [
+        "peso-connect",
+        "ocac-chords"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "projects": [
+        "peso-connect"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "peso-connect",
+      "title": "PESO Connect",
+      "type": "school",
+      "featured": true,
+      "date": "18-May-26",
+      "summary": "A web-based system that digitizes PESO Ozamiz City's job seeker enlistment, employer record-keeping, referral issuance, first-time jobseeker certification, and DOLE reporting for staff-operated use, with no applicant or employer accounts required.",
+      "stack": [
+        "Laravel",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap"
+      ],
+      "note": "Free hosting: the first load may take up to a minute.",
+      "links": {
+        "demo": "https://peso-connect-8i0o.onrender.com/",
+        "repo": ""
+      },
+      "images": [
+        "assets/images/peso-2.jpg",
+        "assets/images/peso-1.jpg",
+        "assets/images/peso-3.jpg"
+      ],
+      "case": {
+        "problem": "PESO ran on paper: job seeker registration forms, employer hiring requests, referral slips, and the monthly DOLE report. Once a form was filed, finding that job seeker again was hard. Employers often didn't report back on referral outcomes, so PESO had no reliable way to track placements. The DOLE report was tallied by hand from the same paper files.",
+        "role": "Group capstone, and I was the full-stack developer: Laravel backend, MySQL database, and the HTML, CSS, JavaScript and Bootstrap frontend. Staff now encode job seekers once (self-submitted online or walk-in), generate referrals digitally, and the DOLE report (total registered, total placed, gender breakdown) generates automatically.",
+        "hard": [
+          "Mid-project scope pivot. After panel and client feedback, we moved from a full self-service applicant and employer system to a staff-operated, account-free model. I reworked the ERD, class diagram, and activity diagrams to match.",
+          "One enlistment flow for two sources. Job seekers can self-register or be encoded by staff, and both go into a single table with the same logic, so nothing is duplicated."
+        ]
+      }
+    },
+    {
+      "id": "ocac-chords",
+      "title": "OCAC Chord Sheet",
+      "type": "personal",
+      "featured": false,
+      "summary": "Free, online, searchable chord sheets from the worship notebooks. Built with Jekyll, hosted on GitHub Pages.",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "links": {
+        "demo": "https://jsevidev.github.io/ocac-worship-chords/",
+        "repo": "https://github.com/jsevidev/ocac-worship-chords"
+      },
+      "date": "27-Sep-26"
+    },
+    {
+      "id": "test-project",
+      "title": "TEST project",
+      "type": "personal",
+      "featured": false,
+      "summary": "",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "links": {
+        "demo": "",
+        "repo": ""
+      },
+      "date": "Oct 2026"
+    }
+  ]
+}
