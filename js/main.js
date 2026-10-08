@@ -19,17 +19,17 @@ function home(d){
   const show=t=>{const l=d.projects.filter(x=>t==='all'||x.type===t);
     $('#featured').innerHTML=l.filter(x=>x.featured).map(card).join('');
     $('#others').innerHTML=l.filter(x=>!x.featured).map(card).join('');
-    document.querySelectorAll('#filters button').forEach(b=>b.classList.toggle('on',b.dataset.t===t));};
-  $('#filters').innerHTML=types.map(t=>`<button data-t="${t}">${t}</button>`).join('');
-  $('#filters').onclick=e=>e.target.dataset.t&&show(e.target.dataset.t);
-  show('all');
+    document.querySelectorAll('#filters button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.t===t));};
+  $('#filters').innerHTML=types.map(t=>`<button data-t="${t}" aria-pressed="false">${t}</button>`).join('');
+  $('#filters').onclick=e=>{const t=e.target.dataset.t;if(!t)return;show(t);history.replaceState(null,'',t==='all'?location.pathname:'?type='+t)};
+  const q=new URLSearchParams(location.search).get('type');show(types.includes(q)?q:'all');
 }
 function project(d){
   const p=d.projects.find(x=>x.id===new URLSearchParams(location.search).get('id')),m=$('#case');
   if(!p||!p.case){m.innerHTML='<p>Project not found. <a href="index.html#projects">Back to projects</a></p>';return}
   document.title=p.title+' | '+d.profile.name;
   m.innerHTML=`<h1>${esc(p.title)}</h1><p class="lead">${esc(p.summary)}</p><div>${tags(p.stack)}</div><div class="row">${btns(p)}</div>
-  <div class="shots">${(p.images||[]).map(i=>`<a href="${esc(i)}" target="_blank"><img src="${esc(i)}" alt="${esc(p.title)} screenshot"></a>`).join('')}</div>
+  <div class="shots">${(p.images||[]).map((i,n)=>`<a href="${esc(i)}" target="_blank" rel="noopener" aria-label="Open full screenshot ${n+1}"><img src="${esc(i)}" alt="${esc(p.title)} screenshot ${n+1} of ${p.images.length}" width="640" height="400" loading="lazy" decoding="async"></a>`).join('')}</div>
   <h2>The problem</h2><p>${esc(p.case.problem)}</p><h2>What I built</h2><p>${esc(p.case.role)}</p>
   <h2>Hard parts</h2><ul>${p.case.hard.map(h=>`<li>${esc(h)}</li>`).join('')}</ul>`;
 }
