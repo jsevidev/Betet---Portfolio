@@ -1,20 +1,21 @@
-# DESIGN.md: Portfolio v3
+# DESIGN.md: Portfolio v4 (clean professional)
 
-Concept: a fixed left rail (name, numbered nav, theme switch, links) beside a scrolling content column. Large type, mono labels, one orange accent, flat surfaces. Light and dark themes via `data-theme` on `<html>`, defaulting to the system setting and saved in localStorage.
+Soft neutral background, white cards with a subtle shadow, one blue accent, one typeface. Light and dark themes via `data-theme` on `<html>` (system default, saved in localStorage).
 
 | Role | Light | Dark |
 |---|---|---|
-| Background | #e9ecee | #0c100f |
-| Surface | #f7f8f9 | #131a18 |
-| Text | #0f1412 | #eaf0ee |
-| Muted | #4b5652 | #9fb0aa |
-| Border | #c9d0d3 | #25312d |
-| Accent | #b23a0b | #ff8a4c |
+| Background | #f6f7f9 | #0e1116 |
+| Surface | #ffffff | #161b22 |
+| Text | #111827 | #f0f3f6 |
+| Muted | #4b5563 | #9aa4b2 |
+| Border | #e3e6eb | #262d36 |
+| Accent | #1d4ed8 | #6ea8fe |
+| Accent soft | #e8eefc | #15233b |
 
-Fonts (Google): Bricolage Grotesque 500/700/800 (display), Hanken Grotesk 400/600 (body), JetBrains Mono 400/500 (labels). Root size scales from 100% to 125% with viewport width, so everything in rem grows on large screens.
+Font: Plus Jakarta Sans 400 to 800 (Google). Headings 800, tight tracking (-0.03em hero, -0.02em h2). Root size scales 100% to 118% with viewport width.
 
-Layout: under 64rem the rail becomes a sticky top bar with a scrolling nav row. From 64rem it is a 100vh left column (15 to 22rem). Touch targets are 44px or taller.
+Layout: sticky blurred top bar, 72rem container, split hero from 64rem, auto-fill card grid, featured card spans full width from 48rem. Radius 18px cards, 10px buttons. Touch targets 44px or taller.
 
-Motion: loader (once per session), hero letter rise, scroll reveal, marquee, theme knob. All transform and opacity only, and all disabled under prefers-reduced-motion.
+Motion: loader once per session, hero fade-up after load, scroll reveal, card lift on hover, theme knob. Transform and opacity only; off under prefers-reduced-motion.
 
-Don't: add gradients or blobs, use `transition: all`, remove focus outlines, or add a second accent color.
+Don't: add gradients, a second accent, `transition: all`, or remove focus outlines.
