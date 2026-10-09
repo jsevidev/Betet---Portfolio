@@ -14,7 +14,7 @@ from pathlib import Path
 
 DATA = Path(__file__).resolve().parent.parent / "data" / "data.json"
 TYPES = {"school", "personal", "workshop"}
-DATE_FORMATS = ["%B %d, %Y", "%b %d, %Y", "%B %Y", "%b %Y", "%m/%d/%Y", "%Y-%m-%d"]
+DATE_FORMATS = ["%d-%b-%y", "%B %d, %Y", "%b %d, %Y", "%B %Y", "%b %Y", "%m/%d/%Y", "%Y-%m-%d"]
 
 
 def col(row, key):

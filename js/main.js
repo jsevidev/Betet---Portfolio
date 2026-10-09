@@ -3,7 +3,7 @@ const root=document.documentElement,rm=matchMedia('(prefers-reduced-motion: redu
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const tags=a=>(a||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('');
 const btn=(u,t,c='')=>u?`<a class="btn ${c}" href="${esc(u)}" target="_blank" rel="noopener">${t}</a>`:'';
-const btns=p=>btn(p.links?.demo,'Live Demo →')+btn(p.links?.repo,'Source Code','ghost');
+const btns=p=>btn(p.links?.demo,'Live Demo →');
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
 const reveal=()=>$$('.rv:not(.in)').forEach(x=>io.observe(x));
 function theme(){const b=$('#theme'),set=t=>{root.dataset.theme=t;b.setAttribute('aria-pressed',t==='dark');$('meta[name=theme-color]').content=t==='dark'?'#0e1116':'#f6f7f9'};

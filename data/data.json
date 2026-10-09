@@ -4,8 +4,8 @@
     "pitch": "Full-stack developer who builds web systems for real offices, and AI prototypes on the side.",
     "about": "4th-year BSIT student. I build web systems end to end, from the database to the screen. My capstone is a live system for a city employment office. Edit this text to say it your way.",
     "github": "https://github.com/jsevidev",
-    "email": "your.email@example.com",
-    "linkedin": "https://www.linkedin.com/in/your-handle"
+    "email": "jabezjohnbetet@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/jabez-john-betet-298979175/"
   },
   "certs": {
     "text": "The full list of certificates and workshop proofs is in my Achievement Log.",
@@ -44,7 +44,7 @@
       "title": "PESO Connect",
       "type": "school",
       "featured": true,
-      "date": "18-May-26",
+      "date": "May 2026",
       "summary": "A web-based system that digitizes PESO Ozamiz City's job seeker enlistment, employer record-keeping, referral issuance, first-time jobseeker certification, and DOLE reporting for staff-operated use, with no applicant or employer accounts required.",
       "stack": [
         "Laravel",
@@ -88,7 +88,7 @@
         "demo": "https://jsevidev.github.io/ocac-worship-chords/",
         "repo": "https://github.com/jsevidev/ocac-worship-chords"
       },
-      "date": "27-Sep-26"
+      "date": "Sep 2026"
     },
     {
       "id": "test-project",
